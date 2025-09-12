@@ -1,0 +1,116 @@
+Introduction
+This document provides an excessively detailed, step by step method for building
+a desktop PC from scratch. It assumes you have purchased all necessary parts and
+tools. Nothing is glossed over. Every screw, cable, and precaution is documented.
+
+Tools and Materials
+1. Phillips #2 screwdriver (magnetized preferred)
+2. Anti static wrist strap (ESD strap)
+3. Small bowl(s) or magnetic tray for screws
+4. Thermal paste (if not pre applied)
+5. Isopropyl alcohol (90%+) and lint free cloth (for cleaning)
+6. Cable ties (nylon and reusable velcro)
+7. Flashlight or headlamp (for visibility inside case)
+8. Your components:
+   Case
+   Power Supply Unit (PSU)
+   Motherboard (mobo)
+   CPU (Processor)
+   CPU Cooler
+   Memory (RAM)
+   Storage (SSD, HDD, NVMe)
+   Graphics Card (GPU)
+   Case fans (if not pre installed)
+   Peripherals (monitor, keyboard, mouse)
+
+Step 1: Preparation
+Work on a large, clean, flat surface.
+Wear your anti static strap clipped to a grounded surface.
+Lay out each component and confirm part numbers.
+Consult the motherboard manual. Keep it open throughout build.
+
+Step 2: Case Preparation
+Remove both side panels. Store screws safely.
+Lay case on its side with motherboard tray facing upward.
+Check standoff alignment: compare to mobo mounting holes.
+Adjust or add standoffs as needed (never overtighten).
+
+Step 3: Power Supply Installation
+Confirm PSU orientation: fan intake should face a vent (case bottom or rear).
+Slide PSU into position, secure with 4 screws at rear.
+Pre route PSU cables through case cutouts: 24 pin ATX, 8 pin CPU, PCIe, SATA.
+
+Step 4: Motherboard Assembly (outside case)
+Place mobo on cardboard box or anti static foam.
+Open CPU socket lever carefully.
+Align CPU triangle with socket triangle, gently lower in. Do not force.
+Lock socket arm until it clicks (expect firm resistance).
+
+Step 5: CPU Cooler
+If cooler has pre applied paste, skip paste application.
+If not, apply pea sized dot of paste at CPU center.
+Secure cooler brackets to mobo according to instructions.
+Tighten screws in diagonal pattern, a few turns at a time.
+
+Step 6: RAM Installation
+Consult manual for dual channel slots (usually A2 and B2).
+Open DIMM slot latches fully.
+Align notch in RAM with slot key.
+Press firmly until latches click shut.
+
+Step 7: M.2 SSD Installation (if applicable)
+Locate M.2 slot on mobo.
+Remove tiny screw and set aside.
+Insert NVMe at 30 degree angle, gently press down, secure screw.
+
+Step 8: Install Motherboard in Case
+Insert rear I/O shield into case until it clicks (metal edges inward).
+Lower mobo into case, align I/O ports with shield.
+Align standoffs with screw holes.
+Secure mobo with included screws (do not overtighten).
+
+Step 9: Case Fans
+Install intake fans at front, exhaust at rear or top.
+Confirm airflow direction (arrows on side of fans).
+Secure with provided screws. Connect to SYS FAN headers.
+
+Step 10: GPU Installation
+Remove PCIe slot covers corresponding to GPU width.
+Insert GPU into top PCIe x16 slot. Push until latch clicks.
+Secure with screws to case bracket.
+
+Step 11: Storage Drives (2.5 or 3.5)
+Mount SSDs in 2.5 bays with screws or trays.
+Mount HDDs in 3.5 bays with vibration damping screws if possible.
+Connect SATA data cable to mobo, SATA power cable to PSU.
+
+Step 12: Cable Connections
+24 pin ATX to motherboard main power.
+8 pin CPU power near top of mobo.
+PCIe power connectors to GPU.
+SATA power to drives.
+Front panel connectors (PWR SW, RESET, HDD LED, PWR LED) to header (consult manual).
+Front panel audio, USB 2.0 or 3.0 headers to mobo.
+Fan headers to SYS FAN or CHA FAN.
+
+Step 13: Cable Management
+Route cables behind motherboard tray where possible.
+Use cable ties to bundle excess.
+Avoid obstructing fans or airflow.
+
+Step 14: Initial Power On Test
+Connect monitor, keyboard, mouse.
+Plug PSU into wall, switch to ON.
+Press case power button.
+Confirm fans spin, LEDs light, and monitor displays POST or BIOS screen.
+
+Step 15: BIOS Setup
+Enter BIOS (Del or F2).
+Confirm CPU, RAM, storage detected.
+Set boot priority to USB for OS installation.
+Enable XMP for RAM if supported.
+
+Step 16: Operating System Installation
+Insert bootable USB.
+Follow OS install prompts.
+Install chipset, GPU, and driver software as instructed.
