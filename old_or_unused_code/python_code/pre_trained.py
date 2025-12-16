@@ -245,7 +245,7 @@ num_epochs = 10
 train_losses, val_losses, tokens_seen = train_model_simple(
     model, train_loader, val_loader, optimizer, device,
     num_epochs=num_epochs, eval_freq=5, eval_iter=5,
-    start_context="Every effort moves you", tokenizer=tokenizer
+    start_context="He was armed with a long bow of yew wood", tokenizer=tokenizer
 )
 
 # %%
@@ -362,7 +362,7 @@ torch.save(model.state_dict(), file_name)
 print(f"Model saved as {file_name}")
 
 # %%
-reload + inference 
+#reload + inference 
 inference_device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 model = GPTModel(GPT_CONFIG_124M)
@@ -371,7 +371,7 @@ model.eval()
 
 token_ids = generate_text_simple(
     model=model,
-    idx=text_to_token_ids("Every effort moves you", tokenizer),
+    idx=text_to_token_ids("He was armed with a long bow of yew wood", tokenizer),
     max_new_tokens=30,
     context_size=GPT_CONFIG_124M["context_length"]
 )

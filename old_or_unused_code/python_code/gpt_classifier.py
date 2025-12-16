@@ -68,6 +68,30 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(device)
 
 
+#example of .pth small weights: 
+# {
+#   "tok_emb.weight":        Tensor(vocab_size, emb_dim),
+#   "pos_emb.weight":        Tensor(context_len, emb_dim),
+
+#   "blocks.0.att.W_q":      Tensor(emb_dim, emb_dim),
+#   "blocks.0.att.W_k":      Tensor(emb_dim, emb_dim),
+#   "blocks.0.att.W_v":      Tensor(emb_dim, emb_dim),
+#   "blocks.0.att.W_o":      Tensor(emb_dim, emb_dim),
+
+#   "blocks.0.ff.W1":        Tensor(emb_dim, 4*emb_dim),
+#   "blocks.0.ff.W2":        Tensor(4*emb_dim, emb_dim),
+
+#   ...
+#   "blocks.11.att.*":       Tensors for last block
+
+#   "ln_f.weight":           Tensor(emb_dim),
+#   "ln_f.bias":             Tensor(emb_dim),
+
+#   "lm_head.weight":        Tensor(vocab_size, emb_dim)
+# }
+
+
+
 # %%
 #first pre trained output of just words
 
@@ -79,7 +103,7 @@ tokenizer = tiktoken.get_encoding("gpt2")
 
 token_ids = generate(
     model=model,
-    idx=text_to_token_ids("Every effort moves you", tokenizer).to(device),
+    idx=text_to_token_ids("He was armed with a long bow of yew wood", tokenizer).to(device),
     max_new_tokens=30,
     context_size=BASE_CONFIG["context_length"],
     top_k=1,
@@ -307,7 +331,7 @@ print(f"{len(val_loader)} validation batches")
 print(f"{len(test_loader)} test batches")
 
 # %%
-text_1 = "Every effort moves you"
+text_1 = "He was armed with a long bow of yew wood"
 
 token_ids = generate(
     model=model,

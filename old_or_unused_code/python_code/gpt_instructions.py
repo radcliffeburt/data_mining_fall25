@@ -74,7 +74,7 @@ tokenizer = tiktoken.get_encoding("gpt2")
 
 token_ids = generate(
     model=model,
-    idx=text_to_token_ids("Every effort moves you", tokenizer).to(device),
+    idx=text_to_token_ids("He was armed with a long bow of yew wood", tokenizer).to(device),
     max_new_tokens=30,
     context_size=BASE_CONFIG["context_length"],
     top_k=1,
