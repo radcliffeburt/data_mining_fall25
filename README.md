@@ -1,4 +1,4 @@
-# data_mining_fall25
+# PLEASE READ TO GRADE FOR CODE REVIEW 3
 work from data mining in fall 2025
 
 Due to the mess that my repo sits, this will serve as a legend for going through it:
